@@ -1,4 +1,4 @@
-19413662161100593
+19415332617715022
 BPEM488CWaux
 A4988StepStick
 Through hole straight pin header, 1x08, 2.54mm pitch, single row
@@ -405,6 +405,13 @@ TO-220-3 Vertical RM 2.54mm
 0
 3
 3
+Buggly SPD
+MPXH6115_Adapter_Vertical
+
+
+0
+4
+4
 Buggly SPD Aux
 01530008Z_Fuse_Holder
 

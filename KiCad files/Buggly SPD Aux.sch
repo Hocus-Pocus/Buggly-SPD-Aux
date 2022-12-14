@@ -4,17 +4,17 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
+Title "Buggly SPD Aux"
+Date "2022-12-14"
 Rev ""
-Comp ""
+Comp "Robert Hiebert"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
 Text GLabel 6300 1000 2    50   Input ~ 0
-D50-control
+D45-control
 $Comp
 L power:GND #PWR010
 U 1 1 63B81329
@@ -47,8 +47,8 @@ $Comp
 L Device:Fuse F1
 U 1 1 63B81338
 P 4250 1400
-F 0 "F1" V 4150 1350 50  0000 L CNN
-F 1 "20A" V 4350 1300 50  0000 L CNN
+F 0 "F1" V 4150 1250 50  0000 L CNN
+F 1 "20A" V 4150 1400 50  0000 L CNN
 F 2 "Buggly SPD Aux:01530008Z_Fuse_Holder" V 4180 1400 50  0001 C CNN
 F 3 "~" H 4250 1400 50  0001 C CNN
 	1    4250 1400
@@ -216,7 +216,7 @@ F 3 "" H 1850 4800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 2400 4950 2    60   Input ~ 0
-D52-out
+D40-out
 $Comp
 L Device:R R6
 U 1 1 63B813AD
@@ -260,7 +260,7 @@ Connection ~ 2150 4700
 Wire Wire Line
 	1950 5150 1950 5100
 Text GLabel 1200 4800 0    60   Input ~ 0
-D52-control
+D40-control
 Wire Wire Line
 	1700 700  1900 700 
 Wire Wire Line
@@ -352,7 +352,7 @@ F 3 "" H 2100 2600 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 2200 2850 2    60   Input ~ 0
-D10-out
+D6-out
 $Comp
 L V10-Ign-Inj-Drivers-V2-rescue:AUIRF3205-RESCUE-V10_Ign-Inj_Drivers_V2 Q3
 U 1 1 63B81436
@@ -385,68 +385,9 @@ Wire Wire Line
 	1950 2550 1950 2600
 Connection ~ 1950 2600
 Text GLabel 1300 2800 0    60   Input ~ 0
-D10-control
+D6-control
 Wire Wire Line
 	1450 2800 1300 2800
-$Comp
-L V10-Ign-Inj-Drivers-V2-rescue:LED D10
-U 1 1 63B81449
-P 2800 3650
-F 0 "D10" H 2900 3750 50  0000 C CNN
-F 1 "LED" H 2700 3750 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 2800 3650 50  0001 C CNN
-F 3 "" H 2800 3650 50  0000 C CNN
-	1    2800 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 63B8144F
-P 2100 3650
-F 0 "R5" V 2200 3600 50  0000 C CNN
-F 1 "2.4k" V 2100 3650 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2030 3650 50  0001 C CNN
-F 3 "" H 2100 3650 50  0000 C CNN
-	1    2100 3650
-	0    -1   -1   0   
-$EndComp
-Text GLabel 2200 3900 2    60   Input ~ 0
-D11-out
-$Comp
-L V10-Ign-Inj-Drivers-V2-rescue:AUIRF3205-RESCUE-V10_Ign-Inj_Drivers_V2 Q4
-U 1 1 63B81456
-P 1650 3800
-F 0 "Q4" H 1450 4050 50  0000 L CNN
-F 1 "AUIRF3205" H 1250 3950 50  0000 L CNN
-F 2 "Buggly Gruesome AuxTop:TO-220-3_Vertical_Wide" H 1850 3725 50  0001 L CIN
-F 3 "" H 1650 3800 50  0000 L CNN
-	1    1650 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR06
-U 1 1 63B8145C
-P 1400 4200
-F 0 "#PWR06" H 1400 3950 50  0001 C CNN
-F 1 "GND" H 1400 4050 50  0000 C CNN
-F 2 "" H 1400 4200 50  0000 C CNN
-F 3 "" H 1400 4200 50  0000 C CNN
-	1    1400 4200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1750 4200 1750 4000
-Wire Wire Line
-	3050 3650 3000 3650
-Wire Wire Line
-	1750 3600 1950 3600
-Wire Wire Line
-	1950 3600 1950 3650
-Connection ~ 1950 3650
-Text GLabel 1300 3850 0    60   Input ~ 0
-D11-control
-Wire Wire Line
-	1450 3850 1300 3850
 $Comp
 L V10-Ign-Inj-Drivers-V2-rescue:ISL9V3040P3 Q6
 U 1 1 63B81469
@@ -459,7 +400,7 @@ F 3 "" H 1850 5800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 2400 5950 2    60   Input ~ 0
-D53-out
+D38-out
 $Comp
 L Device:R R7
 U 1 1 63B81470
@@ -490,7 +431,7 @@ Connection ~ 2150 5700
 Wire Wire Line
 	1950 6150 1950 6100
 Text GLabel 1200 5800 0    60   Input ~ 0
-D53-control
+D38-control
 Text Notes 2900 5000 0    50   ~ 0
 (Ign1)
 Text Notes 2650 1050 0    50   ~ 0
@@ -501,56 +442,14 @@ Text Notes 2650 1950 0    50   ~ 0
 (Inj2)
 Text Notes 2700 2900 0    50   ~ 0
 (PWM Idle)
-Text Notes 2700 3950 0    50   ~ 0
-(Spare out)
-$Comp
-L Simulation_SPICE:DIODE D6
-U 1 1 63B814BD
-P 2700 5150
-F 0 "D6" H 2700 5250 50  0000 C CNN
-F 1 "1N4001" H 2700 5050 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2700 5150 50  0001 C CNN
-F 3 "~" H 2700 5150 50  0001 C CNN
-F 4 "Y" H 2700 5150 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "D" H 2700 5150 50  0001 L CNN "Spice_Primitive"
-	1    2700 5150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2150 4950 2400 4950
 Wire Wire Line
 	2150 4700 2150 4950
-Connection ~ 2150 4950
-Wire Wire Line
-	2150 5150 2550 5150
-Wire Wire Line
-	2150 4950 2150 5150
-Wire Wire Line
-	2900 5150 2850 5150
-$Comp
-L Simulation_SPICE:DIODE D11
-U 1 1 63B814CB
-P 2800 6150
-F 0 "D11" H 2800 6250 50  0000 C CNN
-F 1 "1N4001" H 2750 6050 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2800 6150 50  0001 C CNN
-F 3 "~" H 2800 6150 50  0001 C CNN
-F 4 "Y" H 2800 6150 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "D" H 2800 6150 50  0001 L CNN "Spice_Primitive"
-	1    2800 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3000 6150 2950 6150
 Wire Wire Line
 	2400 5950 2150 5950
 Wire Wire Line
 	2150 5700 2150 5950
-Wire Wire Line
-	2150 5950 2150 6150
-Wire Wire Line
-	2150 6150 2650 6150
-Connection ~ 2150 5950
 $Comp
 L Simulation_SPICE:DIODE D4
 U 1 1 63B814EB
@@ -568,23 +467,6 @@ Wire Wire Line
 	1950 3050 2350 3050
 Wire Wire Line
 	2700 3050 2650 3050
-$Comp
-L Simulation_SPICE:DIODE D5
-U 1 1 63B814F5
-P 2500 4100
-F 0 "D5" H 2500 4200 50  0000 C CNN
-F 1 "1N4001" H 2500 4000 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2500 4100 50  0001 C CNN
-F 3 "~" H 2500 4100 50  0001 C CNN
-F 4 "Y" H 2500 4100 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "D" H 2500 4100 50  0001 L CNN "Spice_Primitive"
-	1    2500 4100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1950 4100 2350 4100
-Wire Wire Line
-	2700 4100 2650 4100
 $Comp
 L Simulation_SPICE:DIODE D3
 U 1 1 63B81513
@@ -627,13 +509,6 @@ Wire Wire Line
 	1950 2850 1950 3050
 Connection ~ 1950 2850
 Wire Wire Line
-	1950 3900 2200 3900
-Wire Wire Line
-	1950 3650 1950 3900
-Wire Wire Line
-	1950 3900 1950 4100
-Connection ~ 1950 3900
-Wire Wire Line
 	1900 1000 2150 1000
 Wire Wire Line
 	1900 750  1900 1000
@@ -647,17 +522,11 @@ Wire Wire Line
 Wire Wire Line
 	1900 1900 1900 2100
 Connection ~ 1900 1900
-Text Notes 2050 4200 0    50   ~ 0
-Flyback
 Text Notes 2000 2200 0    50   ~ 0
 Flyback
 Text Notes 2000 1300 0    50   ~ 0
 Flyback
 Text Notes 2050 3150 0    50   ~ 0
-Flyback
-Text Notes 2250 5250 0    50   ~ 0
-Flyback
-Text Notes 2250 6250 0    50   ~ 0
 Flyback
 $Comp
 L Device:R R?
@@ -850,9 +719,9 @@ Inj2
 Text Notes 9900 1850 0    50   ~ 0
 Ign1 & Ign2 +
 Text GLabel 9550 2000 2    60   Input ~ 0
-D52-out
+D40-out
 Text GLabel 9550 2100 2    60   Input ~ 0
-D53-out
+D38-out
 Text Notes 10200 2050 2    50   ~ 0
 Ign1
 Text Notes 10200 2150 2    50   ~ 0
@@ -867,8 +736,6 @@ Text GLabel 10200 5750 0    50   Input ~ 0
 SigRtn
 Text GLabel 10200 6150 0    50   Input ~ 0
 O2-Sensor
-Text GLabel 10200 6250 0    50   Input ~ 0
-Spare-ADC
 Wire Wire Line
 	10200 5650 10500 5650
 Wire Wire Line
@@ -879,8 +746,6 @@ Wire Wire Line
 	10200 5950 10500 5950
 Wire Wire Line
 	10200 6150 10500 6150
-Wire Wire Line
-	10200 6250 10500 6250
 Wire Wire Line
 	9600 2900 9450 2900
 Wire Wire Line
@@ -905,8 +770,6 @@ Text Notes 9550 5700 0    50   ~ 0
 ADC 5V
 Text Notes 9400 6200 0    50   ~ 0
 WB O2
-Text Notes 9250 6300 0    50   ~ 0
-Spare ADC
 Text Notes 10250 2850 2    50   ~ 0
 CKP VR+
 Text Notes 10250 2950 2    50   ~ 0
@@ -929,10 +792,6 @@ Wire Wire Line
 Connection ~ 7750 650 
 Text Notes 8050 2450 1    50   ~ 0
 Spare High Current Output +
-Text GLabel 10200 5550 0    60   Input ~ 0
-D11-out
-Text Notes 9700 5550 2    50   ~ 0
-Spare High Current Output -
 Text GLabel 3000 750  2    50   Input ~ 0
 F3-out
 Text GLabel 2650 1200 2    50   Input ~ 0
@@ -943,11 +802,7 @@ Text GLabel 2650 2100 2    50   Input ~ 0
 F6-out
 Text GLabel 3150 4700 2    50   Input ~ 0
 F4-out
-Text GLabel 2900 5150 2    50   Input ~ 0
-F4-out
 Text GLabel 3150 5700 2    50   Input ~ 0
-F4-out
-Text GLabel 3000 6150 2    50   Input ~ 0
 F4-out
 Wire Wire Line
 	2500 6600 2600 6600
@@ -965,7 +820,7 @@ F 3 "" H 10200 5650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 9600 2600 2    60   Input ~ 0
-D10-out
+D6-out
 Text Notes 10450 2650 2    50   ~ 0
 PWM Idle
 Wire Wire Line
@@ -1006,10 +861,6 @@ Text GLabel 3050 2600 2    50   Input ~ 0
 F5-out
 Text GLabel 2700 3050 2    50   Input ~ 0
 F5-out
-Text GLabel 3050 3650 2    50   Input ~ 0
-F3-out
-Text GLabel 2700 4100 2    50   Input ~ 0
-F3-out
 $Comp
 L power:GND #PWR022
 U 1 1 63B8167F
@@ -1082,8 +933,6 @@ Wire Wire Line
 Wire Wire Line
 	1400 3150 1750 3150
 Wire Wire Line
-	1400 4200 1750 4200
-Wire Wire Line
 	1300 6150 1950 6150
 Wire Wire Line
 	1200 5800 1400 5800
@@ -1095,8 +944,6 @@ Wire Wire Line
 	2750 4700 2450 4700
 Wire Wire Line
 	2750 5700 2450 5700
-Wire Wire Line
-	2250 3650 2600 3650
 Wire Wire Line
 	2250 2600 2600 2600
 Wire Wire Line
@@ -1176,23 +1023,17 @@ $EndComp
 Text GLabel 1850 7300 0    60   Input ~ 0
 D9-control
 Text GLabel 1850 7400 0    60   Input ~ 0
-D10-control
-Text GLabel 1850 7500 0    60   Input ~ 0
-D11-control
+D6-control
 Wire Wire Line
 	2350 7200 2500 7200
 Wire Wire Line
 	1950 7300 1850 7300
 Wire Wire Line
 	1950 7400 1850 7400
-Wire Wire Line
-	1950 7500 1850 7500
-Text Notes 2050 7700 0    50   ~ 0
+Text Notes 2050 7650 0    50   ~ 0
 100K
 Text GLabel 6350 3900 2    50   Input ~ 0
 O2-Sensor
-Text GLabel 5700 4000 2    50   Input ~ 0
-TPS-Sensor
 Text GLabel 6350 4300 2    50   Input ~ 0
 SigRtn
 $Comp
@@ -1248,21 +1089,17 @@ DB25 connections to Buggly SPD board
 Text GLabel 6350 5600 2    50   Input ~ 0
 D9-control
 Text GLabel 5700 5500 2    50   Input ~ 0
-D10-control
-Text GLabel 6350 5200 2    50   Input ~ 0
-D11-control
+D6-control
 Text GLabel 5700 5300 2    50   Input ~ 0
-D50-control
+D45-control
 Text GLabel 6350 6000 2    50   Input ~ 0
 Tachometer
 Text GLabel 5700 5900 2    50   Input ~ 0
-D52-control
+D40-control
 Text GLabel 6350 5800 2    50   Input ~ 0
-D53-control
+D38-control
 Text GLabel 6350 6200 2    50   Input ~ 0
 CKP-
-Text GLabel 5700 3800 2    50   Input ~ 0
-Spare-ADC
 Text Notes 7700 5450 2    50   ~ 0
 12 volt from main relay
 Text Notes 6200 5750 0    50   ~ 0
@@ -1271,8 +1108,6 @@ Text Notes 6850 5650 0    50   ~ 0
 Inj2
 Text Notes 6250 5550 0    50   ~ 0
 PWM Idle
-Text Notes 6900 5250 0    50   ~ 0
-Spare high current output 
 Text Notes 6250 5350 0    50   ~ 0
 ASD relay control
 Text Notes 6900 6050 0    50   ~ 0
@@ -1289,10 +1124,6 @@ Text Notes 6200 5050 0    50   ~ 0
 Common ground
 Text Notes 6700 4350 0    50   ~ 0
 Sensor ground
-Text Notes 6200 3850 0    50   ~ 0
-Spare ADC
-Text Notes 6200 4050 0    50   ~ 0
-Throttle Position Sensor
 Text Notes 6850 3950 0    50   ~ 0
 Wide Band O2 sensor
 Text Notes 6900 4150 0    50   ~ 0
@@ -1330,29 +1161,10 @@ Text Notes 6000 6150 0    50   ~ 0
 CKP VR+
 Text Notes 6050 5150 0    50   ~ 0
 Fused 12V for Tachometer circuit
-Text Notes 5500 4600 0    50   ~ 0
-Spare wire
-Text Notes 5500 4700 0    50   ~ 0
-Spare wire
-Text Notes 5500 4800 0    50   ~ 0
-Spare wire
-Text Notes 5500 4500 0    50   ~ 0
-Spare wire
 Wire Wire Line
 	7000 650  7250 650 
 Text GLabel 1850 7200 0    60   Input ~ 0
 D8-control
-$Comp
-L Device:R_Network04_US RN1
-U 1 1 63DE94C2
-P 2150 7400
-F 0 "RN1" V 1733 7400 50  0000 C CNN
-F 1 "R_Network04_US" V 1824 7400 50  0000 C CNN
-F 2 "Resistor_THT:R_Array_SIP5" V 2425 7400 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 2150 7400 50  0001 C CNN
-	1    2150 7400
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	1950 7200 1850 7200
 Wire Wire Line
@@ -1365,19 +1177,6 @@ Text GLabel 9550 1500 2    50   Input ~ 0
 F7-out
 Text Notes 11000 1550 2    50   ~ 0
 Spare High Current Output +
-$Comp
-L Connector:Screw_Terminal_01x08 J10
-U 1 1 63F31422
-P 10700 5850
-F 0 "J10" V 10800 5800 50  0000 L CNN
-F 1 "Screw_Terminal_01x08" V 11000 5400 50  0000 L CNN
-F 2 "Buggly SPD Aux:Phoenix_1729076" H 10700 5850 50  0001 C CNN
-F 3 "~" H 10700 5850 50  0001 C CNN
-	1    10700 5850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10500 5550 10200 5550
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 63F9AE12
@@ -1423,8 +1222,6 @@ F 3 " ~" H 5150 5000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5450 3800 5700 3800
-Wire Wire Line
 	5450 4400 7600 4400
 Wire Wire Line
 	7600 4500 7600 4400
@@ -1432,11 +1229,175 @@ Connection ~ 7600 4400
 Wire Wire Line
 	7600 4400 7800 4400
 Wire Wire Line
-	5450 5200 6350 5200
-Wire Wire Line
 	5450 5000 5900 5000
 Wire Wire Line
 	5450 4900 5900 4900
 NoConn ~ 5450 4600
 NoConn ~ 5450 4500
+NoConn ~ 5250 7400
+$Comp
+L V10-Ign-Inj-Drivers-V2-rescue:LED D6
+U 1 1 639BBB5D
+P 2800 3550
+F 0 "D6" H 2900 3650 50  0000 C CNN
+F 1 "LED" H 2700 3650 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 2800 3550 50  0001 C CNN
+F 3 "" H 2800 3550 50  0000 C CNN
+	1    2800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 639BBB63
+P 2100 3550
+F 0 "R5" V 2200 3500 50  0000 C CNN
+F 1 "2.4k" V 2100 3550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2030 3550 50  0001 C CNN
+F 3 "" H 2100 3550 50  0000 C CNN
+	1    2100 3550
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2200 3800 2    60   Input ~ 0
+D5-out
+$Comp
+L V10-Ign-Inj-Drivers-V2-rescue:AUIRF3205-RESCUE-V10_Ign-Inj_Drivers_V2 Q4
+U 1 1 639BBB6A
+P 1650 3700
+F 0 "Q4" H 1400 3950 50  0000 L CNN
+F 1 "AUIRF3205" H 1250 3850 50  0000 L CNN
+F 2 "Buggly Gruesome AuxTop:TO-220-3_Vertical_Wide" H 1850 3625 50  0001 L CIN
+F 3 "" H 1650 3700 50  0000 L CNN
+	1    1650 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 639BBB70
+P 1400 4100
+F 0 "#PWR06" H 1400 3850 50  0001 C CNN
+F 1 "GND" H 1400 3950 50  0000 C CNN
+F 2 "" H 1400 4100 50  0000 C CNN
+F 3 "" H 1400 4100 50  0000 C CNN
+	1    1400 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 4100 1750 3900
+Wire Wire Line
+	3050 3550 3000 3550
+Wire Wire Line
+	1750 3500 1950 3500
+Wire Wire Line
+	1950 3500 1950 3550
+Connection ~ 1950 3550
+Text GLabel 1300 3750 0    60   Input ~ 0
+D5-control
+Wire Wire Line
+	1450 3750 1300 3750
+Text Notes 2700 3850 0    50   ~ 0
+(Spare H/C out)
+$Comp
+L Simulation_SPICE:DIODE D5
+U 1 1 639BBB80
+P 2500 4000
+F 0 "D5" H 2500 4100 50  0000 C CNN
+F 1 "1N4001" H 2500 3900 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2500 4000 50  0001 C CNN
+F 3 "~" H 2500 4000 50  0001 C CNN
+F 4 "Y" H 2500 4000 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 2500 4000 50  0001 L CNN "Spice_Primitive"
+	1    2500 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 4000 2350 4000
+Wire Wire Line
+	2700 4000 2650 4000
+Wire Wire Line
+	1950 3800 2200 3800
+Wire Wire Line
+	1950 3550 1950 3800
+Wire Wire Line
+	1950 3800 1950 4000
+Connection ~ 1950 3800
+Text Notes 2050 4100 0    50   ~ 0
+Flyback
+Text GLabel 3050 3550 2    50   Input ~ 0
+F7-out
+Text GLabel 2700 4000 2    50   Input ~ 0
+F7-out
+Wire Wire Line
+	1400 4100 1750 4100
+Wire Wire Line
+	2250 3550 2600 3550
+Text Notes 6200 4050 0    50   ~ 0
+Throttle Position Sensor
+Text GLabel 5700 4000 2    50   Input ~ 0
+TPS-Sensor
+Text Notes 6200 3850 0    50   ~ 0
+Spare ADC
+Text GLabel 5700 3800 2    50   Input ~ 0
+Spare-ADC
+Text GLabel 6350 5200 2    50   Input ~ 0
+D5-control
+Text Notes 6850 5250 0    50   ~ 0
+Spare H/C out
+Wire Wire Line
+	5700 3800 5450 3800
+Wire Wire Line
+	6350 5200 5450 5200
+$Comp
+L Device:R_Network04_US RN1
+U 1 1 639F34D0
+P 2150 7400
+F 0 "RN1" V 1733 7400 50  0000 C CNN
+F 1 "R_Network04_US" V 1824 7400 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP5" V 2425 7400 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 2150 7400 50  0001 C CNN
+	1    2150 7400
+	0    1    1    0   
+$EndComp
+Text GLabel 1850 7500 0    60   Input ~ 0
+D5-control
+Wire Wire Line
+	1850 7500 1950 7500
+Text Notes 6150 1700 0    50   ~ 0
+Gn
+Text Notes 2700 600  0    50   ~ 0
+Rd
+Text Notes 2700 1500 0    50   ~ 0
+Rd
+Text Notes 2750 3400 0    50   ~ 0
+Yl
+Text Notes 2750 2450 0    50   ~ 0
+Or
+Text Notes 2900 5550 0    50   ~ 0
+Bu
+Text Notes 2900 4550 0    50   ~ 0
+Bu
+Text Notes 2200 6450 0    50   ~ 0
+Dk Rd
+$Comp
+L Connector:Screw_Terminal_01x08 J10
+U 1 1 63F31422
+P 10700 5850
+F 0 "J10" V 10800 5800 50  0000 L CNN
+F 1 "Screw_Terminal_01x08" V 11000 5400 50  0000 L CNN
+F 2 "Buggly SPD Aux:Phoenix_1729076" H 10700 5850 50  0001 C CNN
+F 3 "~" H 10700 5850 50  0001 C CNN
+	1    10700 5850
+	1    0    0    -1  
+$EndComp
+Text GLabel 10200 6250 0    50   Input ~ 0
+Spare-ADC
+Text GLabel 10200 5550 0    50   Input ~ 0
+D5-out
+Wire Wire Line
+	10500 5550 10200 5550
+Wire Wire Line
+	10500 6250 10200 6250
+Text Notes 9300 6300 0    50   ~ 0
+Spare ADC
+Text Notes 9250 5600 0    50   ~ 0
+Spare H/C out
 $EndSCHEMATC
